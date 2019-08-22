@@ -18,13 +18,16 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_l_mr1.mk)
 
+# Inherit from Potato vendor
+$(call inherit-product, vendor/potato/config/common_full_phone.mk)
+
 # Inherit from onyx device
 $(call inherit-product, device/oneplus/onyx/device.mk)
 
 # Call the proprietary setup
 $(call inherit-product, vendor/oneplus/onyx/onyx-vendor.mk)
 
-PRODUCT_NAME := aosp_onyx
+PRODUCT_NAME := potato_onyx
 PRODUCT_DEVICE := onyx
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_MODEL := OnePlus

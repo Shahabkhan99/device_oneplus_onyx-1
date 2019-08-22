@@ -15,7 +15,7 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/device.mk \
-    $(LOCAL_DIR)/aosp_onyx.mk
+    $(LOCAL_DIR)/potato_onyx.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_onyx-userdebug
+    potato_onyx-userdebug
